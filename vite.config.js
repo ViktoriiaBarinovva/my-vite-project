@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite'
 
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/my-vite-project/', // Это должно быть названием репозитория на GitHub
-  build: {
-    outDir: 'dist', // Папка, куда собираются файлы
-  },
+  plugins: [react()],
+  base: '/qr-code'
 })
